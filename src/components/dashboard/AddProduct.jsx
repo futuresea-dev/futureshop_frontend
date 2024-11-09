@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import swal from "sweetalert";
-import { useNavigate  } from 'react-router-dom';
-// import Dropzone from "react-dropzone";
-// import { useDropzone } from 'react-dropzone';
 
 import { FaDollarSign } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
