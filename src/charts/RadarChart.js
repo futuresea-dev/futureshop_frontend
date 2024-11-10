@@ -4,7 +4,6 @@ import { Chart, RadarElement, LinearScale, CategoryScale, Title, Tooltip, Legend
 
 // Register the components you are using
 Chart.register(
-  RadarElement,  // For radar chart
   LinearScale,   // For Y-axis (linear scale)
   CategoryScale, // For X-axis (category scale)
   Title,         // For chart title
