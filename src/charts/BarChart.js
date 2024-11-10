@@ -1,6 +1,16 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import { Chart, LinearScale, CategoryScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
+// Register the components you are using
+Chart.register(
+  LinearScale,
+  CategoryScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const BarChart = () => {
 

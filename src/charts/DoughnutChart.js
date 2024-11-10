@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { Chart, ArcElement, Tooltip, Legend, Title } from 'chart.js';
 
+// Register the components you are using
+Chart.register(
+  ArcElement,  // Register the ArcElement for doughnut segments
+  Tooltip,     // Register Tooltip
+  Legend,      // Register Legend
+  Title        // Register Title
+);
 
 const DoughnutChart = () => {
 
@@ -29,14 +37,17 @@ const DoughnutChart = () => {
         }],
     };
 
-    const  options = {
-        scales: {
-            y: {
-                beginAtZero: true
+    const options = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            tooltip: {
+                enabled: true,
             }
         }
     };
-
 
     return (
         <div>
@@ -44,6 +55,5 @@ const DoughnutChart = () => {
         </div>
     );
 };
-
 
 export default DoughnutChart;
