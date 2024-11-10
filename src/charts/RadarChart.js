@@ -1,6 +1,6 @@
 import React from 'react';
 import { Radar } from 'react-chartjs-2';
-import { Chart, RadarElement, LinearScale, CategoryScale, Title, Tooltip, Legend } from 'chart.js';
+import { Chart, LinearScale, CategoryScale, Title, Tooltip, Legend } from 'chart.js';
 
 // Register the components you are using
 Chart.register(
