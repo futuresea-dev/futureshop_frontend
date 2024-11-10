@@ -1,13 +1,15 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { Chart, ArcElement, Tooltip, Legend, Title } from 'chart.js';
+import { Chart, ArcElement, Tooltip, Legend, Title, PointElement, RadialLinearScale } from 'chart.js';
 
 // Register the components you are using
 Chart.register(
   ArcElement,  // Register the ArcElement for doughnut segments
   Tooltip,     // Register Tooltip
   Legend,      // Register Legend
-  Title        // Register Title
+  Title,        // Register Title,
+  PointElement,
+  RadialLinearScale
 );
 
 const DoughnutChart = () => {

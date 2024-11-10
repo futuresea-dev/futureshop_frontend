@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Chart, LinearScale, CategoryScale, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart, LinearScale, CategoryScale, LineElement, Title, Tooltip, Legend, PointElement, RadialLinearScale } from 'chart.js';
 
 // Register the components you are using
 Chart.register(
@@ -9,7 +9,9 @@ Chart.register(
   LineElement,   // For line chart
   Title,         // For chart title
   Tooltip,       // For tooltips
-  Legend         // For chart legend
+  Legend,         // For chart legend
+  PointElement,
+  RadialLinearScale
 );
 
 const LineChart = () => {
